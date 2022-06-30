@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: stow
+  author: tiagoamartins
+  description: stow install and module
+  license: MIT
+  min_ansible_version: '2.4'
+  platforms:
+    - name: ArchLinux
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - '36'

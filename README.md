@@ -30,4 +30,7 @@ None.
 
 ## Author Information
 
-This role was created in 2022 by Tiago Martins.
+This role was modified in 2022 by Tiago Martins.
+
+The contents here were originally created by [Caian R. Ertl](mailto:hi@caian.org)
+as part of [ansible-stow](https://github.com/caian-org/ansible-stow)
