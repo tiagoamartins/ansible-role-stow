@@ -31,7 +31,7 @@ def purge_conflicts(conflicts):
                 os.unlink(file)
             else:
                 os.remove(file)
-    except Exception as err:  # noqa: disable=broad-except
+    except Exception as err:  # pylint: disable=broad-except # noqa: B902
         return {'message': f'unable to purge file "{file}"; error: {str(err)}'}
 
     return None
