@@ -3,6 +3,10 @@ dependency:
   name: galaxy
 driver:
   name: docker
+lint: |-
+  set -e
+  yamllint .
+  ansible-lint
 platforms:
   - name: instance
     image: tiago/${MOLECULE_DISTRO:-archlinux}:latest
@@ -13,10 +17,6 @@ provisioner:
   name: ansible
   config_options:
     defaults:
-      stdout_callback: 'yaml'
+      stdout_callback: yaml
   playbooks:
     converge: ${MOLECULE_PLAYBOOK:-converge.yml}
-lint: |-
-  set -e
-  yamllint .
-  ansible-lint
